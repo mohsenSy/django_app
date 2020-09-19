@@ -25,7 +25,7 @@ SECRET_KEY = 'avsbu%--(sd85@i1+&pubx7@kr@*)l)8k+6m0g-@ea8%-ykti-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["142.93.96.74"]
+ALLOWED_HOSTS = ["142.93.96.74", "djangoapp-hcstr.ondigitalocean.app"]
 
 
 # Application definition
