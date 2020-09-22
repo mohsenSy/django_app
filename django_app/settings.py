@@ -26,7 +26,7 @@ SECRET_KEY = 'avsbu%--(sd85@i1+&pubx7@kr@*)l)8k+6m0g-@ea8%-ykti-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["142.93.96.74", "djangoapp-hcstr.ondigitalocean.app"]
+ALLOWED_HOSTS = ["142.93.96.74"]
 
 
 # Application definition
@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'django_app.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ["DATABASE_URL"])
+    'default': 'default': dj_database_url.parse(os.environ["DATABASE_URL"])
 }
 
 
