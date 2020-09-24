@@ -74,9 +74,11 @@ WSGI_APPLICATION = 'django_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ["DATABASE_URL"])
-}
+db_url = os.environ.get("DATABASE_URL", None)
+if db_url:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ["DATABASE_URL"])
+    }
 
 
 # Password validation
